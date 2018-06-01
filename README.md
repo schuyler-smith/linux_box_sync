@@ -16,6 +16,18 @@ sudo apt-get install lftp
 
 The shell script here uses lftp to contact your Box drive and sync the folder on your computer with the folder on Box.
 
+## USAGE
+
+If the file is not executable when clones, run:
+```
+chmod +x box_sync.sh
+```
+
+to execute the script:
+```
+./box_sync.sh <options> [push][pull] <local_directory> <Box_directory>
+```
+
 
 ### OPTIONS
 the script takes a couple flags and a few other arguments.
