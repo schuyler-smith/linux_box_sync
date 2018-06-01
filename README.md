@@ -23,6 +23,14 @@ If the file is not executable when clones, run:
 chmod +x box_sync.sh
 ```
 
+Be certain to change the username inside the script in line 3
+
+```
+USER='sdsmith@iastate.edu'
+```
+
+If you hack into my Box, you will find only disappontment.
+
 to execute the script:
 ```
 ./box_sync.sh <options> [push][pull] <local_directory> <Box_directory>
