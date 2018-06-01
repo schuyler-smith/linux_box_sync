@@ -4,12 +4,12 @@ Box is a great tool for storing large data, but unlike similar services such as 
 
 
 ## Program Needed
-If your Linux Distro does not come with 'lftp' already installed, you will need to install that.
+If your Linux distro does not come with 'lftp' already installed, you will need to install that.
 
 For Ubuntu users,
 
 ```
-sudo apt-get install fltp
+sudo apt-get install lftp
 ```
 
 ## Sync-ing Box
