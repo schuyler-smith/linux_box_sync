@@ -50,7 +50,6 @@ while getopts ":hdv" OPTION; do
 done
 shift $((OPTIND -1))
 
-
 METHOD=$1
 if [ -z "$METHOD" ]
 then
@@ -118,7 +117,7 @@ lftp -u "$USER","$PASSWORD" ftps://ftp.box.com:990<<EOF
 set ftp:ssl-force true
 set ftp:ssl-protect-data true
 set ssl:verify-certificate no
-mirror --delete --no-perms --verbose $LOCAL $BOX;
+mirror --delete --no-perms --verbose $BOX $LOCAL;
 exit
 EOF
 			else
@@ -129,7 +128,7 @@ lftp -u "$USER","$PASSWORD" ftps://ftp.box.com:990<<EOF
 set ftp:ssl-force true
 set ftp:ssl-protect-data true
 set ssl:verify-certificate no
-mirror --no-perms --verbose "$LOCAL" $BOX;
+mirror --no-perms --verbose "$BOX" $LOCAL;
 exit
 EOF
 	fi 
