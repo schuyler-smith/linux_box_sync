@@ -77,7 +77,7 @@ else
 fi
 if [ -z ${PASSWORD+x} ]
 then
-	read -s -p "Box password: " password
+	read -s -p "Box password: " PASSWORD
 fi
 
 if [ "$METHOD" = 'push' ]; then
